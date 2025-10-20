@@ -13,6 +13,9 @@ public class Application {
             // 문자열 분리
             String[] numbers = StringSplitter.split(input, delimiter);
 
+            // 숫자 파싱
+            int[] parsedNumbers = NumberParser.parse(numbers);
+
         } catch (IllegalArgumentException e) {
             System.out.println("에러: " + e.getMessage());
         }

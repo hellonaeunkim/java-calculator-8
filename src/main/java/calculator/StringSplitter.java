@@ -19,7 +19,9 @@ public class StringSplitter {
     // 문자열을 구분자로 분리하는 메서드
     public static String[] split(String input, String delimiters) {
 
-        input = input.substring(input.indexOf("\\n") + 2);
+        if (input.startsWith("//")) {
+            input = input.substring(input.indexOf("\\n") + 2);
+        }
 
         return input.split(delimiters);
     }
