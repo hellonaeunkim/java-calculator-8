@@ -19,6 +19,9 @@ public class Application {
             // 숫자들의 합 계산
             int sumOfNumbers = Calculator.sum(parsedNumbers);
 
+            // 계산 결과 출력
+            Output.printResult(sumOfNumbers);
+
         } catch (IllegalArgumentException e) {
             System.out.println("에러: " + e.getMessage());
         }
