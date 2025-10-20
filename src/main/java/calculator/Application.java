@@ -16,6 +16,9 @@ public class Application {
             // 숫자 파싱
             int[] parsedNumbers = NumberParser.parse(numbers);
 
+            // 숫자들의 합 계산
+            int sumOfNumbers = Calculator.sum(parsedNumbers);
+
         } catch (IllegalArgumentException e) {
             System.out.println("에러: " + e.getMessage());
         }
